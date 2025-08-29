@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JTGeats</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#" class="brand">JTGeats</a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" role="navigation">
+          <ul class="nav-list">
+            <li><a class="nav-link active" href="#">Home</a></li>
+            <li><a class="nav-link" href="#">About</a></li>
+            <li><a class="nav-link" href="#">Menu</a></li>
+            <li><a class="nav-link" href="#">Blog</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+              <circle
+                cx="11"
+                cy="11"
+                r="7"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+              ></circle>
+              <line
+                x1="16.5"
+                y1="16.5"
+                x2="21"
+                y2="21"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></line>
+            </svg>
+          </button>
+          <button class="icon-btn cart-btn" aria-label="Cart">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+              <path
+                d="M6 8h12l-1.5 12h-9z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M9 8a3 3 0 0 1 6 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+            </svg>
+            <span class="cart-dot"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>
