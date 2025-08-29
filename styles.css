@@ -161,6 +161,73 @@ body {
   right: 2px;
   width: 12px;
   height: 12px;
-  background: #facc15; /* yellow dot */
+  background: #facc15; 
   border-radius: 50%;
+}
+
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1AC073;
+  padding: 0 100px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.landing-text {
+  max-width: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.landing-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.landing-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.search-box input {
+  border: none;
+  padding: 12px;
+  flex: 1;
+  font-size: 16px;
+}
+
+.search-box button {
+  background: #f9b233;
+  border: none;
+  padding: 14px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.landing-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-image img {
+  max-width: 75%;
+  height: auto;
 }
