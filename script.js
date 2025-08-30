@@ -15,3 +15,35 @@ if (toggle && nav) {
     }
   });
 }
+
+const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let index = 0;
+
+    nextBtn.addEventListener('click', () => {
+      if (index < track.children.length - 3) {
+        index++;
+        track.style.transform = `translateX(-${index * 270}px)`;
+      }
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (index > 0) {
+        index--;
+        track.style.transform = `translateX(-${index * 270}px)`;
+      }
+    });
+
+    const modal = document.getElementById('dishModal');
+    document.querySelector('.request-btn').onclick = () => {
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    };
+    document.querySelector('.cancel-btn').onclick = closeModal;
+    document.querySelector('.submit-btn').onclick = closeModal;
+
+    function closeModal() {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
